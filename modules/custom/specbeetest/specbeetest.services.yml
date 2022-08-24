@@ -1,0 +1,7 @@
+services:
+  specbeetest.customconfig_services:
+    class: Drupal\specbeetest\CustomconfigService
+    arguments:    ['@config.factory']
+
+  specbeetest.timzoneoptions_services:
+    class: Drupal\specbeetest\TimzoneoptionsService

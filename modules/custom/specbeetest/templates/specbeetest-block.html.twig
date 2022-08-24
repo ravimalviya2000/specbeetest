@@ -1,0 +1,30 @@
+<div{{ attributes }}>
+  {% if adminconfig.specbeetest_country %}
+    <p>
+      <label>{{ "Country"|t }} </label>
+      <!-- specbeetest_country -->
+      {{ adminconfig.specbeetest_country|t }}
+    </p>
+  {% endif %}
+  {% if adminconfig.specbeetest_city %}
+    <p>
+      <label>{{ "City"|t }} </label>
+      <!-- specbeetest_city -->
+      {{ adminconfig.specbeetest_city|t }}
+    </p>
+  {% endif %}
+  {% if adminconfig.specbeetest_timezon %}
+    <p>
+      <label>{{ "Timezon"|t }}</label>
+      <!-- specbeetest_timezon -->
+      {{ adminconfig.specbeetest_timezon|t }}
+    </p>
+  {% endif %}
+  {% if adminconfig.specbeetest_timezon %}
+    <p>
+      <label>{{ "Date"|t }}</label>
+      <!-- specbeetest_currentdate -->
+      {{ "now"|date("dS M Y - g:i A",adminconfig.specbeetest_timezon) }}
+    </p>
+  {% endif %}
+</div>

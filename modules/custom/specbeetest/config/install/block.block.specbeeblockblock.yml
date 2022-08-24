@@ -1,0 +1,20 @@
+uuid: 7a0ea8ca-78e1-4535-9943-2e0d1374102a
+langcode: en
+status: true
+dependencies:
+  module:
+    - specbeetest
+  theme:
+    - bartik
+id: specbeeblockblock
+theme: bartik
+region: sidebar_first
+weight: -4
+provider: null
+plugin: SpecbeeBlock_block
+settings:
+  id: SpecbeeBlock_block
+  label: "SpecbeeBlock block"
+  label_display: visible
+  provider: specbeetest
+visibility: {}

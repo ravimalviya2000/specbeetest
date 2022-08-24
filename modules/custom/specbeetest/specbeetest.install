@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Specbeetest module install file.
+ */
+
+/**
+ * Uninstall the module config.
+ */
+function specbeetest_uninstall() {
+  \Drupal::configFactory()->getEditable('specbeetest.admin_settings_form')->delete();
+}
