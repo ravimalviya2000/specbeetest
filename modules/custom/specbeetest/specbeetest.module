@@ -12,8 +12,6 @@ function specbeetest_theme($existing, $type, $theme, $path): array {
   return [
     'specbeetest_block' => [
       'variables' => [
-        'active_tab' => NULL,
-        'body_text' => NULL,
         'adminconfig' => [],
       ],
     ],
